@@ -1,0 +1,11 @@
+import Link from "next/link";
+
+function DashboardMockup(){return <div className="mock-window" aria-label="Illustration of a software dashboard"><div className="mock-top"><i/><i/><i/></div><div className="mock-bars"><span/><span/><span/></div><div className="mock-chart"/><div style={{display:"flex",gap:8,marginTop:14}}><span style={{height:9,width:"36%",background:"#dbeafe",borderRadius:8}}/><span style={{height:9,width:"22%",background:"#e5e7eb",borderRadius:8}}/></div></div>}
+export const metadata={title:"Products | VM Solutions",description:"Discover scalable SaaS platforms from VM Solutions."};
+export default function ProductsPage(){return <>
+  <section className="page-intro"><div className="container"><span className="eyebrow">Our products</span><h1>Proprietary Platforms Built for Scale.</h1><p>Purpose-built SaaS foundations that streamline business workflows and support confident growth.</p></div></section>
+  <section className="section"><div className="container">
+    <article className="product-row"><div className="product-visual"><DashboardMockup/></div><div><span className="eyebrow">Business workflow platform</span><h2 className="section-title">Enterprise Inquiry Engine</h2><p>Bring customer inquiries into one clear, measurable workflow. Automated routing gets each request to the right team, PostgreSQL supports dependable data integrity, and centralized analytics make follow-up visible.</p><ul><li>Automated inquiry routing</li><li>PostgreSQL data integrity</li><li>Centralized performance analytics</li></ul><Link className="text-link" href="/contact?inquiry=Enterprise%20Inquiry%20Engine">Request Demo →</Link></div></article>
+    <article className="product-row"><div className="product-visual"><DashboardMockup/></div><div><span className="eyebrow">Marketplace platform</span><h2 className="section-title">Secure Marketplace Architecture</h2><p>A flexible marketplace foundation with a credit-based ecosystem, dynamic permissions, and privacy-focused security controls. Adapt the architecture to the needs of your buyers, sellers, and operators.</p><ul><li>Credit-based transactions</li><li>Dynamic roles and permissions</li><li>Privacy-first security architecture</li></ul><Link className="text-link" href="/contact?inquiry=Secure%20Marketplace%20Architecture">Request Demo →</Link></div></article>
+  </div></section>
+</>}
